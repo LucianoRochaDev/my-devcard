@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
                     leading: FaIcon(FontAwesomeIcons.phoneAlt,
                         size: 21.0, color: Color(0xffb7e3ff2)),
                     title: Text(
-                      '+55 27 99590-XXXX',
+                      '+55 27 XXXX-XXXX',
                       style: TextStyle(fontSize: 19.5),
                     ),
                   ),
@@ -91,7 +91,7 @@ class MyApp extends StatelessWidget {
                     leading: FaIcon(FontAwesomeIcons.envelope,
                         color: Color(0xffb7e3ff2)),
                     title: Text(
-                      'luciano.rocha.dev@gmail.com',
+                      'seuemail@gmail.com',
                       style: TextStyle(fontSize: 19.5),
                     ),
                   ),
@@ -173,7 +173,7 @@ void _launchLinkedin() async {
 void _launchEmail() async {
   final Uri params = Uri(
     scheme: 'mailto',
-    path: 'luciano.rocha.dev@gmail.com',
+    path: 'seuemail@gmail.com',
     query: 'subject=Usei seu App!&body=Usei o aplicativo My DevCard...',
   );
   String url = params.toString();
@@ -181,7 +181,7 @@ void _launchEmail() async {
 }
 
 void _launchWhatsapp() async {
-  const _url = "https://wa.me/5527995902503?text=Usei seu App!";
+  const _url = "https://wa.me/SEUWHATSAPP?text=Usei seu App!";
   var encoded = Uri.encodeFull(_url);
   await launch(encoded, forceSafariVC: false);
 }
